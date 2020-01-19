@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context="com.example.jhonatan.anunciate.Opinar">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criticado"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/colorLetras"
+            android:gravity="center"
+            android:text="¿Qué te ha parecido ? "/>
+
+        <RatingBar
+            android:id="@+id/ratingOpinion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="1"
+            android:layout_gravity="center"
+            android:stepSize="1" />
+
+        <EditText
+            android:id="@+id/etopinion"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/comentar"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/colorLetras"
+            android:textColor="@color/colorLetras"
+             />
+        <Button
+            android:id="@+id/btncrearOpinion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/opinar"
+            android:textColorHint="@color/colorLetras"
+            android:theme="@style/BotonColores"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

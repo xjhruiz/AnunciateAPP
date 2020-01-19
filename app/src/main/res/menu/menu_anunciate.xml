@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/escribiranuncioItem"
+        android:title="@string/publicar_anuncio"
+        android:icon="@drawable/ic_publicar_anuncio"
+        />
+   <item
+        android:id="@+id/misAnuncios"
+        android:icon="@drawable/ic_mis_anuncios"
+        android:title="@string/mis_anuncios"
+       app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/perfilItem"
+        android:icon="@drawable/ic_person"
+        android:title="@string/perfil" />
+    <item
+        android:title="@string/saliritem"
+        android:icon="@drawable/ic_salir"
+        android:orderInCategory="100"
+        android:id="@+id/salir"
+        />
+    <item
+        android:title="@string/actualizar"
+        android:icon="@drawable/ic_update"
+        android:id="@+id/actualizar"
+
+        />
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c42911</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#f9054d15</color>
+    <color name="colorLetras">#ffffff</color>
+    <color name="colorLetrasTitulos">#000</color>
+    <color name="fondo">#22c278</color>
+    <color name="botones">#70117c</color>
+    <color name="colorletras1">#08247b</color>
+    <color name="fondo2">#0cb314</color>
+    <color name="colorlista">#7120f20d</color>
+    <color name="colorfecha">#b8686467</color>
+    <color name="letraperfil">#fb403c3f</color>
+</resources>

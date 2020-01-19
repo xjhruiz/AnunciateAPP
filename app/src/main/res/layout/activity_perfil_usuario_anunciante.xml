@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jhonatan.anunciate.PerfilUsuarioAnunciante">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tbperfilAnunciante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:gravity="bottom"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingTop="20dp"
+            android:theme="@style/AppTheme.AppBarOverLay"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/Titulo"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Titulo"
+                    android:textColor="@color/colorLetras"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/SubTitulo"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Subtitulo"
+                    android:textColor="@color/fondo"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:background="@color/colorfecha"
+        android:padding="10dp"
+        android:text="@string/informacion_personal"
+        android:textColor="@color/letraperfil"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/anombre"
+        android:layout_alignRight="@+id/anombre"
+        android:layout_below="@+id/textView4"
+
+        android:layout_marginLeft="15dp"
+        android:padding="5dp"
+        android:text="@string/nombre_y_apellido"
+        android:textColor="@color/letraperfil"
+
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/anombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/anombre"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignRight="@+id/anombre"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/anombre"
+        android:padding="5dp"
+        android:text="Ciudad"
+        android:textColor="@color/letraperfil"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/aciudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/textvie7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/aciudad"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorfecha"
+        android:padding="10dp"
+        android:text="@string/medio_de_contacto"
+        android:textColor="@color/letraperfil"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/aciudad"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignRight="@+id/aciudad"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@id/textvie7"
+        android:padding="5dp"
+        android:text="@string/perfiltelefono"
+        android:textColor="@color/letraperfil"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/atelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignLeft="@+id/aciudad"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignStart="@+id/aciudad"
+        android:layout_below="@+id/textView7"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/atelefono"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignRight="@+id/atelefono"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/atelefono"
+        android:padding="5dp"
+        android:text="@string/email"
+        android:textColor="@color/letraperfil"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/aEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_alignLeft="@+id/atelefono"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignStart="@+id/atelefono"
+        android:layout_below="@+id/textView8"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/aEmail"
+        android:background="@color/colorfecha"
+        android:padding="10dp"
+        android:text="@string/opiniones"
+        android:textColor="@color/letraperfil"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listaopiniones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView16" />
+
+
+</RelativeLayout>
+

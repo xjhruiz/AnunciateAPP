@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo2"
+    tools:context="com.example.jhonatan.anunciate.PublicarAnuncio">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        android:id="@+id/linearLayout2">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tbanucio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:gravity="bottom"
+            android:theme="@style/AppTheme.AppBarOverLay"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+                <TextView android:id="@+id/Titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorLetras"
+                    android:textStyle="bold"
+                    android:text="@string/Titulo"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+                <TextView android:id="@+id/SubTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="italic"
+                    android:textColor="@color/fondo"
+                    android:text="@string/Subtitulo"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:text="@string/text2"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_goneMarginBottom="5dp"
+        android:background="@color/fondo2"
+        android:textColor="@color/colorLetrasTitulos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="9dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/fondo"
+        android:columnCount="2"
+        android:rowCount="7"
+        android:useDefaultMargins="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Funcion Laboral" />
+
+        <EditText
+            android:id="@+id/anulabor"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_funcionlaboral"
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Pago" />
+
+        <EditText
+            android:id="@+id/anupago"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_pago"
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Dirección" />
+
+        <EditText
+            android:id="@+id/anudireccion"
+            android:drawableLeft="@drawable/ic_direccion"
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Ciudad" />
+
+        <EditText
+            android:id="@+id/anuciudad"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_ciudad"
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Jornada" />
+
+        <EditText
+            android:id="@+id/anujornada"
+            android:drawableLeft="@mipmap/iconotrabajo"
+
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/detalles" />
+
+        <EditText
+            android:id="@+id/anudetalles"
+            android:drawableLeft="@drawable/ic_funcionlaboral"
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="start"
+            android:layout_marginLeft="40dp"
+            android:padding="10dp"
+            android:text="Etiquetas" />
+
+
+        <EditText
+            android:id="@+id/anuetiquetas"
+            android:drawableLeft="@drawable/ic_etiquetas"
+            android:ems="10" />
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992">
+
+        <Button
+            android:id="@+id/anunciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/publicar"
+            android:theme="@style/BotonColores" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
